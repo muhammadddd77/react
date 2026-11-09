@@ -1,0 +1,119 @@
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden;
+  font-family: Arial, sans-serif;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.06);
+}
+
+thead {
+  background: #f8fafc;
+}
+
+th {
+  padding: 18px 20px;
+  text-align: left;
+  color: #64748b;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+tbody tr {
+  transition: 0.2s;
+}
+
+tbody tr:hover {
+  background: #f8fafc;
+}
+
+td {
+  padding: 16px 20px;
+  color: #334155;
+  font-size: 14px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+/* Avatar */
+
+td:first-child img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+  float: left;
+  margin-right: 12px;
+}
+
+/* User name */
+
+td:first-child p:first-of-type {
+  margin: 4px 0;
+  color: #1e293b;
+  font-size: 14px;
+  font-weight: 600;
+}
+
+/* Email */
+
+td:first-child p:last-of-type {
+  margin: 4px 0;
+  color: #94a3b8;
+  font-size: 12px;
+}
+
+/* Status */
+
+td:nth-child(3) {
+  font-weight: 600;
+}
+
+/* Buttons */
+
+tbody td:last-child {
+  white-space: nowrap;
+}
+
+tbody td:last-child button {
+  padding: 8px 14px;
+  margin-right: 8px;
+  border: none;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 12px;
+  font-weight: 600;
+  transition: 0.2s;
+}
+
+tbody td:last-child button:first-child {
+  background: #eff6ff;
+  color: #2563eb;
+}
+
+tbody td:last-child button:first-child:hover {
+  background: #dbeafe;
+}
+
+tbody td:last-child button:last-child {
+  background: #fef2f2;
+  color: #dc2626;
+}
+
+tbody td:last-child button:last-child:hover {
+  background: #fee2e2;
+}
+
+/* Responsive */
+
+@media (max-width: 768px) {
+  table {
+    min-width: 650px;
+  }
+}
